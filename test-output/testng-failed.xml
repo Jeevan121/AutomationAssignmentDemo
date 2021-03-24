@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.assignmentsdemo.tests.NDTVBusinessTest">
+      <class name="com.assignmentsdemo.tests.AllMovieTest">
         <methods>
-          <include name="setUp"/>
-          <include name="quiteDriver"/>
           <include name="allMovieTest"/>
+          <include name="quiteDriver"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- com.assignmentsdemo.tests.NDTVBusinessTest -->
+      </class> <!-- com.assignmentsdemo.tests.AllMovieTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

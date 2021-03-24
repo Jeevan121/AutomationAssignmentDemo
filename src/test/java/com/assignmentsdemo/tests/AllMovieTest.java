@@ -11,12 +11,16 @@ import com.assignmentsdemo.pages.AllMovieHomePage;
 import com.assignmentsdemo.pages.AllMovieSearchPage;
 import com.assignmentsdemo.pages.MoviePage;
 import com.assignmentsdemo.utils.BaseTest;
+import com.assignmentsdemo.utils.RestAssuredUtils;
+
+import io.restassured.response.Response;
 
 public class AllMovieTest extends BaseTest{
 	
 	AllMovieHomePage allMovieHomePage;
 	AllMovieSearchPage allMovieSearchPage;
 	MoviePage moviePage;
+	RestAssuredUtils restAssuredUtils;
 	
 	@BeforeTest
 	public void setUp() {
@@ -29,6 +33,14 @@ public class AllMovieTest extends BaseTest{
 	
 	@Test
 	public void allMovieTest() throws InterruptedException {
+		
+		//here i am integrating the rest assured api call 
+		restAssuredUtils = new RestAssuredUtils();
+		Response res = restAssuredUtils.restAPIPost(AutoConfigs.uri+AutoConfigs.endPoint+"?"+AutoConfigs.queryParam);
+		int statusCode = res.getStatusCode();
+		Assert.assertEquals(statusCode, 201,"the status code is not matching as expected");
+		
+		///=======================================================================
 		allMovieHomePage.enterMovieNameIntoSearchBox("The Godfather");
 		String movieResultCount = allMovieSearchPage.getMovieResultTypeCount();
 		System.out.println("The Retrieved Count is ::"+movieResultCount);
