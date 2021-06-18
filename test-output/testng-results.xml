@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="26697" started-at="2021-03-24T12:31:00Z" finished-at="2021-03-24T12:31:27Z">
+  <suite started-at="2021-06-18T07:53:26Z" name="Default suite" finished-at="2021-06-18T07:54:04Z" duration-ms="37226">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="26697" started-at="2021-03-24T12:31:00Z" finished-at="2021-03-24T12:31:27Z">
+    <test started-at="2021-06-18T07:53:26Z" name="Default test" finished-at="2021-06-18T07:54:04Z" duration-ms="37226">
       <class name="com.assignmentsdemo.tests.AllMovieTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.assignmentsdemo.tests.AllMovieTest@657c8ad9]" name="setUp" is-config="true" duration-ms="10955" started-at="2021-03-24T12:31:00Z" finished-at="2021-03-24T12:31:11Z">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.assignmentsdemo.tests.AllMovieTest@6676f6a0]" started-at="2021-06-18T07:53:26Z" name="setUp" finished-at="2021-06-18T07:53:44Z" duration-ms="18019" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="allMovieTest()[pri:0, instance:com.assignmentsdemo.tests.AllMovieTest@657c8ad9]" name="allMovieTest" duration-ms="15015" started-at="2021-03-24T12:31:11Z" finished-at="2021-03-24T12:31:26Z">
+        <test-method signature="allMovieTest()[pri:0, instance:com.assignmentsdemo.tests.AllMovieTest@6676f6a0]" started-at="2021-06-18T07:53:44Z" name="allMovieTest" finished-at="2021-06-18T07:54:03Z" duration-ms="18167" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- allMovieTest -->
-        <test-method status="PASS" signature="quiteDriver()[pri:0, instance:com.assignmentsdemo.tests.AllMovieTest@657c8ad9]" name="quiteDriver" is-config="true" duration-ms="712" started-at="2021-03-24T12:31:26Z" finished-at="2021-03-24T12:31:27Z">
+        <test-method is-config="true" signature="quiteDriver()[pri:0, instance:com.assignmentsdemo.tests.AllMovieTest@6676f6a0]" started-at="2021-06-18T07:54:03Z" name="quiteDriver" finished-at="2021-06-18T07:54:04Z" duration-ms="1012" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quiteDriver -->

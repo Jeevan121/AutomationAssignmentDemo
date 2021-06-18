@@ -34,14 +34,14 @@ public class AllMovieTest extends BaseTest{
 	@Test
 	public void allMovieTest() throws InterruptedException {
 		
-		//here i am integrating the rest assured api call 
-		restAssuredUtils = new RestAssuredUtils();
-		Response res = restAssuredUtils.restAPIPost(AutoConfigs.uri+AutoConfigs.endPoint+"?"+AutoConfigs.queryParam);
-		int statusCode = res.getStatusCode();
-		Assert.assertEquals(statusCode, 201,"the status code is not matching as expected");
+		RestAssuredAPITest obj = new RestAssuredAPITest();
+		
+		String testInputData = obj.getID();
 		
 		///=======================================================================
-		allMovieHomePage.enterMovieNameIntoSearchBox("The Godfather");
+		allMovieHomePage.enterMovieNameIntoSearchBox(testInputData);
+		
+		//allMovieHomePage.enterMovieNameIntoSearchBox("The Godfather");
 		String movieResultCount = allMovieSearchPage.getMovieResultTypeCount();
 		System.out.println("The Retrieved Count is ::"+movieResultCount);
 		allMovieSearchPage.clickFirtsMovieLnk();

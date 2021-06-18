@@ -11,7 +11,7 @@ public class CreateBrowserInstance {
 WebDriver driver;
 	
 	public WebDriver launchBrowser(String url) {
-		final String driverPath = System.getProperty("user.dir") + File.separator+"drivers"+File.separator+"chromedriver";
+		final String driverPath = System.getProperty("user.dir") + File.separator+"drivers"+File.separator+"chromedriver.exe";
 	    System.setProperty("webdriver.chrome.driver", driverPath);
 		driver = new ChromeDriver();
 		driver.get(url);
